@@ -5,9 +5,9 @@ import (
 )
 
 type Student struct {
-	Name string
-	Id   string
-	Age  uint16
+	Id   string `db:"id"`
+	Name string `db:"name"`
+	Age  uint16 `db:"age"`
 }
 
 func NewStudent(name string, age uint16) *Student {
